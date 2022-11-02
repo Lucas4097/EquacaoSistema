@@ -23,7 +23,7 @@
         <form action="" method="post">
             <div class="mb-3">
                 <label class="form-label" for="">Quantidade de equações</label>
-                <select class="form-select" aria-label="Default select example" name="select">
+                <select class="form-select" aria-label="Default select example" name="quantity">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -33,6 +33,16 @@
             <div class="mb-3">
                 <label for="" class="form-label">Número a ser conseguido</label>
                 <input type="number" name="result" id="" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="">Operação desejada</label>
+                <select class="form-select" aria-label="Default select example" name="operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">/</option>
+                </select>
             </div>
 
             <button class="btn btn-success w-100" type="submit" name="submit">Enviar</button>
