@@ -12,7 +12,7 @@
 <body>
     <section class="border border-2 rounded border-primary p-3">
 
-        <div class="fs-4 text-center mb-2">
+        <div class="fs-4 text-center mb-2 p-1 bg-primary bg-opacity-75 text-white rounded">
             <?php
             if(isset($_POST['submit'])){
                 include("controller/system.php");
@@ -23,7 +23,7 @@
         <form action="" method="post">
             <div class="mb-3">
                 <label class="form-label" for="">Quantidade de equações</label>
-                <select class="form-select" aria-label="Default select example" name="quantity">
+                <select class="form-select" aria-label="Default select example" name="quantity" required>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -32,12 +32,12 @@
 
             <div class="mb-3">
                 <label for="" class="form-label">Número a ser conseguido</label>
-                <input type="number" name="result" id="" class="form-control">
+                <input type="number" name="result" id="" class="form-control" required>
             </div>
 
             <div class="mb-3">
                 <label class="form-label" for="">Operação desejada</label>
-                <select class="form-select" aria-label="Default select example" name="operation">
+                <select class="form-select" aria-label="Default select example" name="operation" required>
                     <option value="+">+</option>
                     <option value="-">-</option>
                     <option value="*">x</option>
