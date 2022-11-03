@@ -2,8 +2,18 @@
 
 for ($i = 0; $i < $_POST['quantity']; $i++) {
 
-    $random = rand(0, 100);
-    $mult = false;
+    if ($_POST['numAlg'] == 2) {
+        $random = rand(0, 100);
+    } else if ($_POST['numAlg'] == 3) {
+        $random = rand(100, 1000);
+    } else if ($_POST['numAlg'] == 4) {
+        $random = rand(1000, 10000);
+    } else if ($_POST['numAlg'] == 5) {
+        $random = rand(10000, 100000);
+    } else{
+        echo "Quantidade de algarismos indisponivel";
+    }
+
 
     // Sistema de operações, verificando se funciona
     $div = false;
@@ -17,9 +27,6 @@ for ($i = 0; $i < $_POST['quantity']; $i++) {
             break;
 
         case '*':
-            if ($_POST['result'] <= 200) {
-                $random = rand(0, 20);
-            }
             $result = ($_POST['result'] / $random);
             break;
 

@@ -35,15 +35,29 @@
                 <input type="number" name="result" id="" class="form-control" required>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label" for="">Operação desejada</label>
-                <select class="form-select" aria-label="Default select example" name="operation" required>
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="*">x</option>
-                    <option value="/">/</option>
-                </select>
+            <div class="mb-3 d-flex justify-content-between align-items-center">
+                <div class="mx-2 px-1 w-50">
+                    <label class="form-label" for="">Operação</label>
+                    <select class="form-select" aria-label="Default select example" name="operation" required>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">x</option>
+                        <option value="/">/</option>
+                    </select>
+                </div>
+
+                <div class="mx-2 px-1 w-100">
+                    <label class="form-label" for=""> N° de Algarismos </label>
+                    <select class="form-select" aria-label="Default select example" name="numAlg" required>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
             </div>
+
+
 
             <button class="btn btn-success w-100" type="submit" name="submit">Enviar</button>
         </form>
